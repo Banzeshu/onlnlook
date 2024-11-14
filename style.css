@@ -1,0 +1,151 @@
+/*
+Theme Name: DOC
+Theme URI: http://example.com/my-new-theme/
+Author: Your Name
+Author URI: http://example.com
+Description: A brief description of your theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-new-theme
+*/
+
+/*
+body {
+    animation: waveAnimation 5s ease-in-out infinite;
+    background-size: 200% 200%;
+    background-image: linear-gradient(-45deg, #00c6fb, #007bff, #f2d492, #2ecc71);
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+}
+*/
+body{
+        width: 100%; /* 或者指定具体的宽度 */
+        min-height: 800px; /* 高度可以根据需要调整 */
+}
+main{
+    min-height: 700px;
+}
+
+.header-login-btn{
+    display: block;
+}
+.header-nav-title{
+    display: block;
+}
+.header-login-logo{
+    display: none;
+}
+.header-search-sm{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .header-login-btn{
+        display: none;
+    }
+    .header-login-logo{
+        display: block;
+    }
+    .header-nav-title{
+        display: none;
+    }
+}
+
+.index-sum-tag {
+    margin: 1rem 1rem 1rem 1rem;
+}
+.index-sum-tag span{
+    font-size: 1rem;
+}
+.index-jumbotron{
+    background-image: linear-gradient(to top, #00c6fb 0%, #007bff 100%);
+    text-align:center;
+    color:white;
+    border-radius:0;
+    box-shadow: 0 0 10rem #007bff;
+    /*opacity: 0;*/
+}
+.index-search-form{
+    max-width: 800px;
+    margin: auto;
+}
+.index-search-form input{
+    height: calc(1.5em + 2rem + 10px);
+    border-radius:5rem;
+    line-height:2.5rem;
+    font-size:1.5rem;
+}
+@media (max-width: 768px) {
+    .index-search-form {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+
+.brand-letter-box{
+    background-color: #c9c7c7;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.brand-letter-box-links a{
+    margin-left: 0.5rem;
+    word-wrap: break-word;
+}
+
+.login-left{
+    background-color: #007bff;
+    height: 100%;
+}
+
+.login-form{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.login-card{
+    display:flex;
+    justify-content: center;
+    margin-top:5rem;
+}
+
+.footer-box{
+    margin-top: 5rem;
+    background-color: black;
+    color: white;
+}
+.footer-box-col{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.single-content{
+    max-width: 960px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .custom-container {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+
+.account-favorite-box{
+    max-width: 800px;
+    margin-top: 1rem;
+}
+@media (max-width: 768px) {
+    .account-favorite-box {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
